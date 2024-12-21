@@ -6,9 +6,11 @@ export class TSVFileReader implements FileReader {
   constructor(
     private readonly filename: string
   ) {}
+
   public read(): void {
     this.rawData = readFileSync(this.filename, { encoding: 'utf-8' });
   }
+
   public toArray(): RentalOffer[] {
     if (!this.rawData) {
       throw new Error('File was not read');

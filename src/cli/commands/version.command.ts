@@ -17,6 +17,7 @@ export class VersionCommand implements Command {
   constructor(
     private readonly filePath: string = './package.json'
   ) {}
+
   private readVersion(): string {
     const jsonContent = readFileSync(resolve(this.filePath), 'utf-8');
     const importedContent: unknown = JSON.parse(jsonContent);
@@ -25,9 +26,11 @@ export class VersionCommand implements Command {
     }
     return importedContent.version;
   }
+
   public getName(): string {
     return '--version';
   }
+
   public async execute(..._parameters: string[]): Promise<void> {
     try {
       const version = this.readVersion();
