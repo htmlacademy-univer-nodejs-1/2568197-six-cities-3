@@ -1,0 +1,60 @@
+{
+  "api": {
+    "title": [
+      "Предложение1",
+      "Предложение2",
+      "Предложение3",
+      "Предложение4",
+      "Предложение5"
+    ],
+    "info": [
+      "Описание1",
+      "Описание2",
+      "Описание3",
+      "Описание4",
+      "Описание5"
+    ],
+    "preview": [
+      "preview1.jpg",
+      "preview2.jpg",
+      "preview3.jpg",
+      "preview4.jpg",
+      "preview5.jpg"
+    ],
+    "photos": [
+      "photo1.jpg",
+      "photo2.jpg",
+      "photo3.jpg",
+      "photo4.jpg",
+      "photo5.jpg"
+    ],
+    "name": [
+      "Иван Иванов",
+      "Олег Сидоров",
+      "Пьер Безухов",
+      "Роланд Дискейн",
+      "Холи Гибни"
+    ],
+    "email": [
+      "snow@pisem.local",
+      "president@dka.local",
+      "fish@big.local",
+      "test@pisem.local",
+      "freedom@pisem.local"
+    ],
+    "avatar": [
+      "user.jpg",
+      "photo.jpg",
+      "awesome-avatar.jpg",
+      "roland.jpg",
+      "smite.jpg"
+    ],
+    "password": [
+      "password1",
+      "password2",
+      "password3",
+      "password4",
+      "password5"
+    ]
+  }
+}
