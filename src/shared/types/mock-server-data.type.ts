@@ -6,4 +6,5 @@ export type MockServerData = {
   email: string[];
   avatar: string[];
   password: string[];
+  photos: string[];
 };
