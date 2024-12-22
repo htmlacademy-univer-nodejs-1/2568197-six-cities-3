@@ -1,4 +1,5 @@
 import { RentalOffer, RentalType, UserType, RentalAmenities, City } from '../types/index.js';
+
 export function createOffer(offerData: string): RentalOffer {
   const [
     title,
@@ -22,6 +23,7 @@ export function createOffer(offerData: string): RentalOffer {
     userType,
     coordinates
   ] = offerData.replace('\n', '').split('\t');
+
   return {
     title,
     info,

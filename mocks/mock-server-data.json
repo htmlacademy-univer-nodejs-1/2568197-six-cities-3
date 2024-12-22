@@ -1,59 +1,60 @@
 {
   "api": {
-    "titles": [
-      "title1",
-      "title2",
-      "title3",
-      "title4",
-      "title5"
+    "title": [
+      "Предложение1",
+      "Предложение2",
+      "Предложение3",
+      "Предложение4",
+      "Предложение5"
     ],
-    "descriptions": [
-      "description1",
-      "description2",
-      "description3",
-      "description4",
-      "description5"
+    "info": [
+      "Описание1",
+      "Описание2",
+      "Описание3",
+      "Описание4",
+      "Описание5"
     ],
-    "previewPhotos": [
-      "prev-photo-1.jpg",
-      "prev-photo-2.jpg",
-      "prev-photo-3.jpg",
-      "prev-photo-4.jpg",
-      "prev-photo-5.jpg",
-      "prev-photo-6.jpg",
-      "prev-photo-7.jpg",
-      "prev-photo-8.jpg"
+    "preview": [
+      "preview1.jpg",
+      "preview2.jpg",
+      "preview3.jpg",
+      "preview4.jpg",
+      "preview5.jpg"
     ],
     "photos": [
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg",
-      "photo-5.jpg",
-      "photo-6.jpg",
-      "photo-7.jpg",
-      "photo-8.jpg"
+      "photo1.jpg",
+      "photo2.jpg",
+      "photo3.jpg",
+      "photo4.jpg",
+      "photo5.jpg"
     ],
-    "authorNames": [
-      "authorName1",
-      "authorName2",
-      "authorName3",
-      "authorName4",
-      "authorName5"
+    "name": [
+      "Иван Иванов",
+      "Олег Сидоров",
+      "Пьер Безухов",
+      "Роланд Дискейн",
+      "Холи Гибни"
     ],
-    "authorEmails": [
-      "author1@example.com",
-      "author2@example.com",
-      "author3@example.com",
-      "author4@example.com",
-      "author5@example.com"
+    "email": [
+      "snow@pisem.local",
+      "president@dka.local",
+      "fish@big.local",
+      "test@pisem.local",
+      "freedom@pisem.local"
     ],
-    "authorAvatars": [
-      "author1-avatar.jpg",
-      "author2-avatar.jpg",
-      "author3-avatar.jpg",
-      "author4-avatar.jpg",
-      "author5-avatar.jpg"
+    "avatar": [
+      "user.jpg",
+      "photo.jpg",
+      "awesome-avatar.jpg",
+      "roland.jpg",
+      "smite.jpg"
+    ],
+    "password": [
+      "password1",
+      "password2",
+      "password3",
+      "password4",
+      "password5"
     ]
   }
 }
