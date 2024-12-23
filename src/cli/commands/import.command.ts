@@ -16,9 +16,11 @@ export class ImportCommand implements Command {
   private databaseClient: DatabaseClient;
   private logger: Logger;
   private salt: string;
+
   constructor() {
     this.onImportedLine = this.onImportedLine.bind(this);
     this.onCompleteImport = this.onCompleteImport.bind(this);
+
     this.logger = new ConsoleLogger();
     this.offerService = new DefaultOfferService(this.logger, OfferModel);
     this.userService = new DefaultUserService(this.logger, UserModel);
@@ -41,6 +43,7 @@ export class ImportCommand implements Command {
       ...offer.renter,
       password: DEFAULT_USER_PASSWORD
     }, this.salt);
+
     await this.offerService.create({
       title: offer.title,
       info: offer.info,
@@ -69,7 +72,9 @@ export class ImportCommand implements Command {
   public async execute(filename: string, login: string, password: string, host: string, dbname: string, salt: string): Promise<void> {
     const uri = getMongoURI(login, password, host, DEFAULT_DB_PORT, dbname);
     this.salt = salt;
+
     await this.databaseClient.connect(uri);
+
     const fileReader = new TSVFileReader(filename.trim());
 
     fileReader.on('line', this.onImportedLine);
