@@ -66,7 +66,6 @@ export class CreateOfferDto {
   @IsEnum(RentalAmenities, {each: true, message: CreateOfferValidationMessage.amenities.invalidAmenityFormat})
   public amenities: RentalAmenities[];
 
-  @IsMongoId({message: CreateOfferValidationMessage.userId.invalidId})
   public userId: string;
 
   @IsArray({message: CreateOfferValidationMessage.coordinates.invalidFormat})
